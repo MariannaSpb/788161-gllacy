@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Marianna Minich](https://up.htmlacademy.ru/htmlcss/22/user/788161).
-* Наставник: `Неизвестно`.
+* Наставник: [Петров Олег](https://htmlacademy.ru/profile/fyvfyv).
 
 ---
 
