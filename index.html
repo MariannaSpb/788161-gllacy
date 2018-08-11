@@ -5,8 +5,126 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+            <img src="http://placehold.it/150x100"  alt="Логотип магазина">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="delivery.html">Доставка и оплата</a></li>
+          <li><a href="about_company.html">О Компании</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="search">Поиск</li>
+          <li class="login-link">Вход</li>
+          <li class="basket">Пусто</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1 class="visually-hidden">Магазин "Глейси"</h1>
+      <section class="present">
+        <h2 class="visually-hidden">Акции магазина</h2>
+        <ul class="present-list">
+          <li class="present-item">
+            <h3>Малинка даром!</h3>
+            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <a class="button" href="catalog.html">Хочу шоколадки!</a>
+          </li>
+          <li class="present-item">
+              <h3>Шоколадки даром!</h3>
+              <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+              <a class="button" href="catalog.html">Хочу шоколадки!</a>
+            </li>
+        </ul>
+      </section>
+      <section class="popular">
+          <h2 class="visually-hidden">Хиты продаж</h2>
+          <figure>
+              <img src="http://placehold.it/150x100">
+              <figcaption>описание мороженого1</figcaption>
+          </figure>
+          <figure>
+              <img src="http://placehold.it/150x100">
+              <figcaption>описание мороженого2</figcaption>
+          </figure>
+          <figure>
+              <img src="http://placehold.it/150x100">
+              <figcaption>описание мороженого3</figcaption>
+          </figure>
+          <figure>
+              <img src="http://placehold.it/150x100">
+              <figcaption>описание мороженого4</figcaption>
+          </figure>
+      </section>
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <h3>Магазин Глейси- это онлайн- и офлайн-магазин по продаже мороженного собственного производства на развес</h3>
+        <ul class="features-list">
+            <li class="feature-item">
+              <p>текст1</p>
+            </li>
+            <li class="feature-item">
+                <p>текст2</p>
+              </li>
+            <li class="feature-item">
+              <p>текст3</p>
+            </li>
+            <li class="feature-item">
+                <p>текст4</p>
+            </li>
+        </ul>
+      </section>
+      <article class="new-article">
+        <h3>Новое в нашем блоге</h3>
+        <a href="index.html">10 способов сервировки фруковых щербетов к столу</a>
+      </article>
+      <section class="subscription-form">
+        <h3 class="visually-hidden">Подписка</h3>
+        <p>текст, предлагающий подписку</p>
+        <a class="button" href="catalog.html">Отправить</a>
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <section class="adress">
+          <h3 class="visually-hidden">Адрес офиса</h3>
+          <p>
+              Адрес главного офиса<br>
+              и офлайн магазина:<br>
+              ул.Большая Конюшенная<br>
+              19/8, Санкт-Петербург<br>
+          </p>
+          <p>
+              Для заказов по телефону:<br>
+              8 812 450-24-25<br>
+              (с 10 до 20 ежедневно)
+          </p>
+            <a class="button-feedback" href="index.html">Форма обратной связи</a>
+        </section>
+      </section>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-social">
+          <ul>
+            <li><a class="social-button" href="#">Твиттер</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Вконтакте</a></li>
+          </ul>
+        </div>
+        <p class="information">
+          <a class="link-information" href="#">Для поставщиков</a><br>
+          <a class="link-information" href="#">О производстве</a>
+        </p>
+        <p>
+          <a class="link-information" href="#">Наши документы</a><br>
+          <a class="link-information" href="#">Экологические стандарты</a>
+        </p>
+        <p class="footer-copyright">
+          <img src="http://placehold.it/150x100"  alt="Логотип HTML Academy">
+            Сделано в HTML Academy ©2017
+        </p>
+    </footer>
   </body>
 </html>
