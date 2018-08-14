@@ -16,8 +16,8 @@
         <li class="site-navigation">
           <a href="catalog.html">Каталог</a>
           <ul class="site-navigation-list">
-            <li class="site-navigation-list-top">
-              <a href="#">Новинки</a>
+            <li class="site-navigation-list-item">
+              <a href="#"><b>Новинки</b></a>
             </li>
             <li class="site-navigation-list-item">
               <a href="catalog.html">Сливочное</a>
@@ -40,27 +40,39 @@
           <a href="#">О Компании</a>
         </li>
       </ul>
-      <ul class="user-navigation">
-        <li>
-          <a class="header-btn-search" href="#">
-            <span class="visually-hidden">Поиск</span>
-          </a>
-        </li>
-        <li>
-          <a class="login-link" href="#">Вход</a>
-        </li>
-        <li>
-          <a class="header-btn-basket" href="#">
-            <span class="visually-hidden">Корзина</span>
-            <span class="btn-basket-text">Пусто</span>
-          </a>
-        </li>
-      </ul>
     </nav>
-      <div class="page-header-info">
-        <p class="opening-hours">С 10 до 20, ежедневно</p>
-        <a class="phone-number" href="tel:+78124502525">8 812 450-25-25</a>
-      </div>
+    <ul class="user-navigation">
+      <li>
+        <a class="header-btn-search" href="#">
+          <span class="visually-hidden">Поиск</span>
+        </a>
+        <form class="user-navigation modal-search" action="https://echo.htmlacademy.ru" method="post">
+          <input class="user-navigation-input" type="text" name="search" placeholder="Что ищем?">
+        </form>
+      </li>
+      <li>
+        <a class="login-link" href="#">Вход</a>
+        <form class="user-navigation-login" action="https://echo.htmlacademy.ru" method="post">
+          <input class="user-navigation-input" type="email" name="email" placeholder="Электронная почта">
+          <input class="user-navigation-input" type="password" name="password" placeholder="Пароль">
+          <button class="button-enter" type="submit">Войти</button>
+          <p class="user-navigation-links">
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </p>
+        </form>
+      </li>
+      <li>
+        <a class="header-btn-basket" href="#">
+          <span class="visually-hidden">Корзина</span>
+          <span class="btn-basket-text">Пусто</span>
+        </a>
+      </li>
+    </ul>
+    <div class="page-header-info">
+      <p class="opening-hours">С 10 до 20, ежедневно</p>
+      <a class="phone-number" href="tel:+78124502525">8 812 450-25-25</a>
+    </div>
   </header>
   <!-- <section class="slider">Тут будет слайдер</section> -->
   <main class="container">
@@ -157,12 +169,12 @@
         <p>
           Адрес главного офиса<br>
           и офлайн магазина:<br>
-          ул.Большая Конюшенная<br>
-          19/8, Санкт-Петербург<br>
+          <b>ул.Большая Конюшенная</b><br>
+          <b>19/8, Санкт-Петербург</b><br>
         </p>
         <p>
-          Для заказов по телефону: <br>
-          8 812 450-24-25<br>
+          Для заказов по телефону:<br>
+          <b>8 812 450-24-25</b><br>
           (с 10 до 20 ежедневно)
         </p>
         <a class="button-feedback" href="index.html">Форма обратной связи</a>
@@ -215,29 +227,15 @@
       Сделано в HTML Academy ©2017
     </p>
   </footer>
-
   <div class="modal modal-feedback">
     <h2>Мы обязательно вам ответим!</h2>
-    <!-- Форма -->
-    <button class="button">Отправить</button>
-    <button class="modal-close">X</button>
-  </div>
-  <div class="modal modal-search">
-    <h2 class="visually-hidden">Поиск</h2>
-    <!-- Форма -->
-  </div>
-  <div class="modal modal-login">
-    <h2 class="visually-hidden">Вход</h2>
-    <!-- Форма -->
-    <button class="button-enter">Войти</button>
-    <ul class="modal-login-links">
-      <li class="modal-login-link">
-        <a href="#">Забыли пароль?</a>
-      </li>
-      <li class="modal-login-link">
-        <a href="#">Новая регистрация</a>
-      </li>
-    </ul>
+    <button class="modal-feedback-close" type="button">Закрыть</button>
+    <form class="modal modal-feedback" action="https://echo.htmlacademy.ru" method="post">
+      <input class="feedback-input" type="text" placeholder="Как вас зовут?">
+      <input class="feedback-input" type="email" placeholder="Ваша почта для ответа?">
+      <textarea class="feedback-input-textarea" rows="6" placeholder="Напишите что-нибудь..."></textarea>
+      <button class="feedback-btn">Отправить</button>
+    </form>
   </div>
 </body>
 

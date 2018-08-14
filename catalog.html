@@ -9,26 +9,26 @@
 <body>
   <header class="main-header">
     <a href="index.html">
-      <div class="main-header-logo">
-        <img src="http://placehold.it/150x100" alt="Логотип магазина">
-      </div>
+      <img src="http://placehold.it/150x100" alt="Логотип магазина">
     </a>
     <nav class="main-navigation">
       <ul class="site-navigation">
-        <li class="site-navigation-current">
+        <li class="site-navigation">
           <a href="catalog.html">Каталог</a>
-          <ul class="site-navigation-submenu">
-            <li class="site-navigation-submenu-top">
-              <a href="#">Новинки</a>
+          <ul class="site-navigation-list">
+            <li class="site-navigation-list-item">
+              <a href="#"><b>Новинки</b></a>
             </li>
-            <li class="site-navigation-submenu-item-current">Сливочное</li>
-            <li class="site-navigation-submenu-item">
+            <li class="site-navigation-list-item">
+              <a href="catalog.html">Сливочное</a>
+            </li>
+            <li class="site-navigation-list-item">
               <a href="#">Щербеты</a>
             </li>
-            <li class="site-navigation-submenu-item">
+            <li class="site-navigation-list-item">
               <a href="#">Фруктовый лед</a>
             </li>
-            <li class="site-navigation-submenu-item">
+            <li class="site-navigation-list-item">
               <a href="#">Мелорин</a>
             </li>
           </ul>
@@ -40,23 +40,68 @@
           <a href="#">О Компании</a>
         </li>
       </ul>
-      <ul class="user-navigation">
-        <li>
-          <a class="header-btn-search" href="#">
-            <span class="visually-hidden">Поиск</span>
-          </a>
-        </li>
-        <li>
-          <a class="login-link" href="#">Вход</a>
-        </li>
-        <li>
-          <a class="header-btn-basket-full" href="#">
-            <span class="visually-hidden">Корзина</span>
-            <span class="btn-basket-text">2 товара</span>
-          </a>
-        </li>
-      </ul>
     </nav>
+    <ul class="user-navigation">
+      <li>
+        <a class="header-btn-search" href="#">
+          <span class="visually-hidden">Поиск</span>
+        </a>
+        <form class="user-navigation modal-search" action="https://echo.htmlacademy.ru" method="post">
+          <input class="user-navigation-input" type="text" name="search" placeholder="Что ищем?">
+        </form>
+      </li>
+      <li>
+        <a class="login-link" href="#">Вход</a>
+        <form class="user-navigation-login" action="https://echo.htmlacademy.ru" method="post">
+          <input class="user-navigation-input" type="email" name="email" placeholder="Электронная почта">
+          <input class="user-navigation-input" type="password" name="password" placeholder="Пароль">
+          <button class="button-enter" type="submit">Войти</button>
+          <p class="user-navigation-links">
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </p>
+        </form>
+      </li>
+      <li>
+        <a class="header-btn-basket-full" href="#">
+          <span class="visually-hidden">Корзина</span>
+          <span class="btn-basket-text">2 товара</span>
+        </a>
+        <section class="basket container">
+          <h2 class="visually-hidden">Список товаров в корзине</h2>
+          <table class="basket-list">
+            <tr>
+              <td class="basket-item">
+                <h3 class="basket-item-title">Пломбир с апельсиновым джемом</h3>
+                <button class="button" type="button">Удалить товар</button>
+                <img class="basket-item-img" src="http://placehold.it/50x50" alt="первый товар">
+              </td>
+              <td class="basket-item">1,5 кг ×
+                <span class="basket-item">200 руб.</span>
+              </td>
+              <td class="basket-item">300 руб.</td>
+            </tr>
+            <tr>
+              <td class="basket-item">
+                <h3 class="basket-item-title">Клубничный пломбир с присыпкой из белого шоколада</h3>
+                <button class="button" type="button">Удалить товар</button>
+                <img class="basket-item-img" src="http://placehold.it/50x50" alt="второй товар">
+              </td>
+              <td class="basket-item">1,5 кг ×
+                <span class="basket-item">200 руб.</span>
+              </td>
+              <td>450 руб.</td>
+            </tr>
+            <tr>
+              <td class="basket-item" colspan="3">
+                <b>Итого: 750 руб.</b>
+              </td>
+            </tr>
+          </table>
+          <a class="complete-btn" href="#">Оформить заказ</a>
+        </section>
+      </li>
+    </ul>
     <div class="page-header-info">
       <p class="opening-hours">С 10 до 20, ежедневно</p>
       <a class="phone-number" href="tel:+78124502525">8 812 450-25-25</a>
@@ -190,7 +235,7 @@
         </li>
       </ul>
       <ul class="pagination">
-        <li class="pagination-item pagination-item-back">
+        <li class="pagination-item pagination-item-disabled">
           <a href="#">&lt;</a>
         </li>
         <li class="pagination-item pagination-item-current">
@@ -231,26 +276,18 @@
         </li>
       </ul>
     </div>
-    <ul class="footer-links-list">
-      <li class="footer-links-left">
-        <ul class="footer-left-info">
-          <li>
-            <a class="footer-link-information" href="#">Для поставщиков</a>
-          </li>
-          <li>
-            <a class="footer-link-information" href="#">О производстве</a>
-          </li>
-        </ul>
+    <ul class="footer-information-list">
+      <li>
+        <a class="footer-link-information" href="#">Для поставщиков</a>
       </li>
-      <li class="footer-links-right">
-        <ul class="footer-right-info">
-          <li>
-            <a class="footer-link-information" href="#">Наши документы</a>
-          </li>
-          <li>
-            <a class="footer-link-information" href="#">Экологические стандарты</a>
-          </li>
-        </ul>
+      <li>
+        <a class="footer-link-information" href="#">О производстве</a>
+      </li>
+      <li>
+        <a class="footer-link-information" href="#">Наши документы</a>
+      </li>
+      <li>
+        <a class="footer-link-information" href="#">Экологические стандарты</a>
       </li>
     </ul>
     <p class="footer-copyright">
@@ -260,56 +297,6 @@
       Сделано в HTML Academy ©2017
     </p>
   </footer>
-  <section class="basket container">
-    <h2 class="visually-hidden">Список товаров в корзине</h2>
-    <table class="basket-list">
-      <tr>
-        <td class="basket-item">
-          <h3 class="basket-item-title">Пломбир с апельсиновым джемом</h3>
-          <button class="button">X</button>
-          <img class="basket-item-img" src="http://placehold.it/50x50" alt="первый товар">
-        </td>
-        <td class="basket-item">1,5 кг ×
-          <span class="basket-item">200 руб.</span>
-        </td>
-        <td class="basket-item">300 руб.</td>
-      </tr>
-      <tr>
-        <td class="basket-item">
-          <h3 class="basket-item-title">Клубничный пломбир с присыпкой из белого шоколада</h3>
-          <button class="button">X</button>
-          <img class="basket-item-img" src="http://placehold.it/50x50" alt="второй товар">
-        </td>
-        <td class="basket-item">1,5 кг ×
-          <span class="basket-item">200 руб.</span>
-        </td>
-        <td>450 руб.</td>
-      </tr>
-      <tr>
-        <td class="basket-item" colspan="3">
-          <b>Итого: 750 руб.</b>
-        </td>
-      </tr>
-    </table>
-    <button class="complete-btn" type="button">Оформить заказ</button>
-  </section>
-  <div class="modal modal-search">
-    <h2 class="visually-hidden">Поиск</h2>
-    <!-- Форма -->
-  </div>
-  <div class="modal modal-login">
-    <h2 class="visually-hidden">Вход</h2>
-    <!-- Форма -->
-    <button class="button-enter">Войти</button>
-    <ul class="modal-login-links">
-      <li class="modal-login-link">
-        <a href="#">Забыли пароль?</a>
-      </li>
-      <li class="modal-login-link">
-        <a href="#">Новая регистрация</a>
-      </li>
-    </ul>
-  </div>
 </body>
 
 </html>
