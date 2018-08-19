@@ -9,7 +9,7 @@
 <body>
   <header class="main-header">
     <a href="index.html">
-      <img src="http://placehold.it/150x100" alt="Логотип магазина">
+      <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина">
     </a>
     <nav class="main-navigation">
       <ul class="site-navigation">
@@ -43,19 +43,17 @@
     </nav>
     <ul class="user-navigation">
       <li>
-        <a class="header-btn-search" href="#">
-          <span class="visually-hidden">Поиск</span>
-        </a>
-        <form class="user-navigation modal-search" action="https://echo.htmlacademy.ru" method="post">
-          <input class="user-navigation-input" type="text" name="search" placeholder="Что ищем?">
-        </form>
-      </li>
-      <li>
         <a class="login-link" href="#">Вход</a>
         <form class="user-navigation-login" action="https://echo.htmlacademy.ru" method="post">
-          <input class="user-navigation-input" type="email" name="email" placeholder="Электронная почта">
-          <input class="user-navigation-input" type="password" name="password" placeholder="Пароль">
-          <button class="button-enter" type="submit">Войти</button>
+          <p>
+          <label class="visually-hidden" for="entry-email">Электронная почта</label>
+          <input class="user-navigation-input" type="email" name="email" id="entry-email" placeholder="Электронная почта" tabindex="0" required>
+        </p>
+        <p>
+          <label class="visually-hidden" for="entry-password">Пароль</label>
+          <input class="user-navigation-input" type="password" name="password" id="entry-password" placeholder="Пароль" tabindex="0" required>
+        </p>
+          <button class="button-enter">Войти</button>
           <p class="user-navigation-links">
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
