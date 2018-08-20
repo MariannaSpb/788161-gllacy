@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Глейси</title>
+  <title>HTML Academy: Глэйси</title>
 </head>
 
 <body>
@@ -56,17 +56,17 @@
       <li>
         <a class="login-link" href="#">Вход</a>
         <form class="user-navigation-login" action="https://echo.htmlacademy.ru" method="post">
-          <p>
+          <fieldset>
             <label class="visually-hidden" for="entry-email">Электронная почта</label>
             <input class="user-navigation-input" type="email" name="email" id="entry-email" placeholder="Электронная почта" tabindex="0"
               required>
-          </p>
-          <p>
+          </fieldset>
+          <fieldset>
             <label class="visually-hidden" for="entry-password">Пароль</label>
             <input class="user-navigation-input" type="password" name="password" id="entry-password" placeholder="Пароль" tabindex="0"
               required>
-          </p>
-          <button class="button-enter" tabindex="0">Войти</button>
+          </fieldset>
+          <button class="button-enter">Войти</button>
           <p class="user-navigation-links">
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
@@ -102,18 +102,15 @@
       <img src="img/slider-3.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">
       <a class="button slider-button" href="#">Давайте оба!</a>
     </div>
-    <label>
-      <input type="radio" name="slider" value="product-1" checked>
-    </label>
-    <label>
-      <input type="radio" name="slider" value="product-2">
-    </label>
-    <label>
-      <input type="radio" name="slider" value="product-3">
-    </label>
+    <label class="visually-hidden" for="one">Слайд1</label>
+    <input type="radio" name="slider" value="product-1" id="one" checked>
+    <label class="visually-hidden" for="two">Слайд2</label>
+    <input type="radio" name="slider" value="product-2" id="two">
+    <label class="visually-hidden" for="three">Слайд3</label>
+    <input type="radio" name="slider" value="product-3" id="three">
   </section>
   <main class="container">
-    <h1 class="visually-hidden">Магазин "Глейси"</h1>
+    <h1 class="visually-hidden">Магазин "Глэйси"</h1>
     <section class="deals">
       <h2 class="visually-hidden">Акции магазина</h2>
       <div class="deals-item-1">
@@ -170,7 +167,7 @@
     </section>
     <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
-      <h3>Магазин Глейси- это онлайн- и офлайн-магазин по продаже мороженного собственного производства на развес</h3>
+      <h3>Магазин Глэйси- это онлайн- и офлайн-магазин по продаже мороженного собственного производства на развес</h3>
       <ul class="features-list">
         <li class="features-icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных
           временем технологий.</li>
@@ -201,8 +198,7 @@
     <section class="map">
       <h2 class="visually-hidden">Как нас найти</h2>
       <p>
-        <img src="img/map.jpg" width="1200" height="430" alt="Офис компании по адресу
-        ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <img src="img/map.jpg" width="1200" height="430" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </p>
       <section class="address">
         <h3 class="visually-hidden">Адрес офиса</h3>
@@ -274,22 +270,20 @@
   <div class="modal modal-feedback">
     <h2>Мы обязательно вам ответим!</h2>
     <form class="modal modal-feedback" action="https://echo.htmlacademy.ru" method="post">
-      <button class="modal-feedback-close" type="button">
-        <img src="img/cross-big.svg" width="18" height="17" alt="Закрыть">
-      </button>
-      <p class="feedback-item">
+      <button class="modal-feedback-close" type="button">Закрыть</button>
+      <fieldset>
         <label class="visually-hidden" for="feedback-name">Имя</label>
         <input class="feedback-input" type="text" id="feedback-name" placeholder="Как вас зовут?" tabindex="0" required>
-      </p>
-      <p class="feedback-item">
+      </fieldset>
+      <fieldset>
         <label class="visually-hidden" for="feedback-email">Электронная почта</label>
         <input class="feedback-input" type="email" id="feedback-email" placeholder="Ваша почта для ответа?" tabindex="0" required>
-      </p>
-      <p class="feedback-item">
+      </fieldset>
+      <fieldset>
         <label class="visually-hidden" for="feedback-text">Напишите что-нибудь</label>
         <textarea class="feedback-input-textarea" id="feedback-text" rows="6" placeholder="Напишите что-нибудь..." tabindex="0" required></textarea>
-      </p>
-      <button class="feedback-btn" tabindex="0">Отправить</button>
+      </fieldset>
+      <button class="feedback-btn">Отправить</button>
     </form>
   </div>
 </body>

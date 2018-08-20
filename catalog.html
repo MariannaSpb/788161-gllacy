@@ -44,29 +44,29 @@
       </ul>
     </nav>
     <ul class="user-navigation">
-        <li>
-            <a class="header-btn-search" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-            <form class="user-navigation modal-search" action="https://echo.htmlacademy.ru" method="post">
-              <label class="visually-hidden" for="input-search">Поиск по сайту</label>
-              <input class="user-navigation-input" type="search" name="search" id="input-search" placeholder="Что ищем?" tabindex="0">
-            </form>
-          </li>
+      <li>
+        <a class="header-btn-search" href="#">
+          <span class="visually-hidden">Поиск</span>
+        </a>
+        <form class="user-navigation modal-search" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="input-search">Поиск по сайту</label>
+          <input class="user-navigation-input" type="search" name="search" id="input-search" placeholder="Что ищем?" tabindex="0">
+        </form>
+      </li>
       <li>
         <a class="login-link" href="#">Вход</a>
         <form class="user-navigation-login" action="https://echo.htmlacademy.ru" method="post">
-          <p>
+          <fieldset>
             <label class="visually-hidden" for="entry-email">Электронная почта</label>
             <input class="user-navigation-input" type="email" name="email" id="entry-email" placeholder="Электронная почта" tabindex="0"
               required>
-          </p>
-          <p>
+          </fieldset>
+          <fieldset>
             <label class="visually-hidden" for="entry-password">Пароль</label>
             <input class="user-navigation-input" type="password" name="password" id="entry-password" placeholder="Пароль" tabindex="0"
               required>
-          </p>
-          <button class="button-enter" tabindex="0">Войти</button>
+          </fieldset>
+          <button class="button-enter">Войти</button>
           <p class="user-navigation-links">
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
@@ -142,32 +142,35 @@
           </select>
         </fieldset>
         <fieldset class="price">
-          <legend class="price-value">Цена: 100 руб. – 500 руб.</legend>
-          <input type="range">
+          <legend class="price-value">Цена: 100 – 500 руб.</legend>
+          <div class="filter-range">
+            <div class="button-left"></div>
+            <div class="button-right"></div>
+          </div>
         </fieldset>
         <fieldset class="fat">
           <legend class="fat">Жирность</legend>
-          <input class="fat-select" type="radio" name="fat-value" value="0%" id="zero">
+          <input class="fat-select" type="radio" name="fat-value" value="0" id="zero">
           <label for="zero">"0%"</label>
-          <input class="fat-select" type="radio" name="fat-value" value="до 10%" id="ten" checked>
+          <input class="fat-select" type="radio" name="fat-value" value="10" id="ten" checked>
           <label for="ten">до 10%</label>
-          <input class="fat-select" type="radio" name="fat-value" value="до 30%" id="thirty">
+          <input class="fat-select" type="radio" name="fat-value" value="30" id="thirty">
           <label for="thirty">до 30%</label>
-          <input class="fat-select" type="radio" name="fat-value" value="свыше 30%" id="more-thirty">
+          <input class="fat-select" type="radio" name="fat-value" value="30+" id="more-thirty">
           <label for="more-thirty">свыше 30%</label>
         </fieldset>
         <fieldset class="topping-filter">
           <legend>Наполнители:</legend>
-          <input type="checkbox" name="choco-filter" id="chocolate" checked>
+          <input type="checkbox" name="topping" id="chocolate" value="choco-filter" checked>
           <label for="chocolate">шоколадные</label>
-          <input type="checkbox" name="sugar-filter" id="sugar" checked>
-          <label for="chocolate">сахарные присыпки</label>
-          <input type="checkbox" name="fruit-filter" id="fruit">
-          <label for="chocolate">фрукты</label>
-          <input type="checkbox" name="syrups-filter" id="syrups">
-          <label for="chocolate">сиропы</label>
-          <input type="checkbox" name="jams-filter" id="jams">
-          <label for="chocolate">джемы</label>
+          <input type="checkbox" name="topping" id="sugar" value="sugar-filter" checked>
+          <label for="sugar">сахарные присыпки</label>
+          <input type="checkbox" name="topping" id="fruit" value="fruit-filter">
+          <label for="fruit">фрукты</label>
+          <input type="checkbox" name="topping" id="syrups" value="syrups-filter">
+          <label for="syrups">сиропы</label>
+          <input type="checkbox" name="topping" id="jams" value="jams-filter">
+          <label for="jams">джемы</label>
         </fieldset>
         <button class="filter-btn">Применить</button>
       </form>
