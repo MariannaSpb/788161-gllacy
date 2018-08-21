@@ -143,9 +143,13 @@
         </fieldset>
         <fieldset class="price">
           <legend class="price-value">Цена: 100 – 500 руб.</legend>
-          <div class="filter-range">
+          <input type="visually-hidden" name="min-price" value="100">
+          <input type="visually-hidden" name="max-price" value="500">
+          <div class="filter-toggle">
             <div class="button-left"></div>
             <div class="button-right"></div>
+            <div class="range-scale"></div>
+            <div class="selected-range"></div>
           </div>
         </fieldset>
         <fieldset class="fat">
@@ -161,15 +165,15 @@
         </fieldset>
         <fieldset class="topping-filter">
           <legend>Наполнители:</legend>
-          <input type="checkbox" name="topping" id="chocolate" value="choco-filter" checked>
+          <input type="checkbox" name="topping" id="chocolate" value="choco" checked>
           <label for="chocolate">шоколадные</label>
-          <input type="checkbox" name="topping" id="sugar" value="sugar-filter" checked>
+          <input type="checkbox" name="topping" id="sugar" value="sugar" checked>
           <label for="sugar">сахарные присыпки</label>
-          <input type="checkbox" name="topping" id="fruit" value="fruit-filter">
+          <input type="checkbox" name="topping" id="fruit" value="fruit">
           <label for="fruit">фрукты</label>
-          <input type="checkbox" name="topping" id="syrups" value="syrups-filter">
+          <input type="checkbox" name="topping" id="syrups" value="syrups">
           <label for="syrups">сиропы</label>
-          <input type="checkbox" name="topping" id="jams" value="jams-filter">
+          <input type="checkbox" name="topping" id="jams" value="jams">
           <label for="jams">джемы</label>
         </fieldset>
         <button class="filter-btn">Применить</button>
