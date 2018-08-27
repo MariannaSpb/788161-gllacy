@@ -46,47 +46,50 @@
         </li>
       </ul>
     </nav>
-    <ul class="user-navigation">
-      <li>
-        <a class="header-btn-search" href="#">
-          <span class="visually-hidden">Поиск</span>
-        </a>
-        <form class="user-navigation modal-search" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="input-search">Поиск по сайту</label>
-          <input class="user-navigation-input" type="search" name="search" id="input-search" placeholder="Что ищем?" tabindex="0">
-        </form>
-      </li>
-      <li>
-        <a class="login-link" href="#">Вход</a>
-        <form class="user-navigation-login" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset>
-            <label class="visually-hidden" for="entry-email">Электронная почта</label>
-            <input class="user-navigation-input" type="email" name="email" id="entry-email" placeholder="Электронная почта" tabindex="0"
-              required>
-          </fieldset>
-          <fieldset>
-            <label class="visually-hidden" for="entry-password">Пароль</label>
-            <input class="user-navigation-input" type="password" name="password" id="entry-password" placeholder="Пароль" tabindex="0"
-              required>
-          </fieldset>
-          <button class="button-enter">Войти</button>
-          <p class="user-navigation-links">
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
-          </p>
-        </form>
-      </li>
-      <li>
-        <a class="header-btn-basket" href="#">
-          <span class="visually-hidden">Корзина</span>
-          <span class="btn-basket-text">Пусто</span>
-        </a>
-      </li>
-    </ul>
-    <div class="page-header-info">
-      <p class="opening-hours">С 10 до 20, ежедневно</p>
-      <a class="phone-number" href="tel:+78124502525">8 812 450-25-25</a>
+    <div>
+      <ul class="user-navigation">
+        <li>
+          <a class="header-btn-search" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+          <form class="user-navigation modal-search" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="input-search">Поиск по сайту</label>
+            <input class="user-navigation-input" type="search" name="search" id="input-search" placeholder="Что ищем?" tabindex="0">
+          </form>
+        </li>
+        <li>
+          <a class="login-link" href="#">Вход</a>
+          <form class="user-navigation-login" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset>
+              <label class="visually-hidden" for="entry-email">Электронная почта</label>
+              <input class="user-navigation-input" type="email" name="email" id="entry-email" placeholder="Электронная почта" tabindex="0"
+                required>
+            </fieldset>
+            <fieldset>
+              <label class="visually-hidden" for="entry-password">Пароль</label>
+              <input class="user-navigation-input" type="password" name="password" id="entry-password" placeholder="Пароль" tabindex="0"
+                required>
+            </fieldset>
+            <button class="button-enter">Войти</button>
+            <p class="user-navigation-links">
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </p>
+          </form>
+        </li>
+        <li>
+          <a class="header-btn-basket" href="#">
+            <span class="visually-hidden">Корзина</span>
+            <span class="btn-basket-text">Пусто</span>
+          </a>
+        </li>
+      </ul>
+      <div class="page-header-info">
+        <p class="opening-hours">С 10 до 20, ежедневно</p>
+        <a class="phone-number" href="tel:+78124502525">8 812 450-25-25</a>
+      </div>
     </div>
+
   </header>
   <section class="slider">
     <h2 class="visually-hidden">Витрина мороженного</h2>
@@ -129,7 +132,7 @@
     </section>
     <section class="popular-offers">
       <h2 class="visually-hidden">Хиты продаж</h2>
-      <ul>
+      <ul class= "hits-list">
         <li class="offers-item">
           <img src="img/item-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <span class="item-price">310</span>
@@ -184,12 +187,12 @@
     </section>
     <div class="blog-news-wrapper">
       <article class="news">
-        <h2>Новое в нашем блоге</h2>
+        <h2 class="news-title">Новое в нашем блоге</h2>
         <a href="index.html">10 способов сервировки фруковых щербетов к столу</a>
       </article>
       <section class="subscription-form">
         <h2 class="visually-hidden">Подписка</h2>
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
+        <p class="distrib">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
           не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="news-distrib" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="email-news">Электронная почта</label>
@@ -198,6 +201,7 @@
         </form>
       </section>
     </div>
+  </main>
     <section class="map">
       <h2 class="visually-hidden">Как нас найти</h2>
       <p>
@@ -223,7 +227,7 @@
         <a class="button-feedback" href="index.html">Форма обратной связи</a>
       </section>
     </section>
-  </main>
+  <!-- </main> -->
   <footer class="main-footer">
     <div class="footer-social">
       <ul>

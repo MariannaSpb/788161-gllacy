@@ -30,13 +30,9 @@ body {
   background-position: top center;
   background-size: 1200px auto;
 }
-.site-wrapper {
-  min-width: 1200px;
-  margin: 0 auto;
-}
-
+.site-wrapper,
 .catalog-wrapper {
-  min-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -48,6 +44,10 @@ body {
   margin: -1px;
 
   clip: rect(0 0 0 0);
+}
+
+a {
+  text-decoration: none;
 }
 
 .site-navigation a,
@@ -97,7 +97,11 @@ body {
   display: none;
 }
 .site-navigation-submenu {
+  position: absolute;
+  top: 100%;
+
   display: none;
+  padding: 5px;
 }
 
 .site-navigation {
@@ -105,7 +109,7 @@ body {
 }
 .site-navigation-list {
   position: absolute;
-  top: 110%;
+  top: 100%;
 
   padding: 5px;
 }
@@ -114,6 +118,7 @@ body {
 
   background-color: #f8f7f4;
 }
+
 
 .site-navigation-list a {
   font-weight: 400;
@@ -129,21 +134,12 @@ body {
 }
 
 
-.main-header {
-  display: flex;
-}
-
 .main-navigation {
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
 
   background-color: #849d8f;
-}
-
-.site-navigation,
-.user-navigation {
-  display: flex;
 }
 
 .site-navigation {
@@ -165,6 +161,7 @@ body {
 
 
 .login-link {
+  display: inline-block;
   width: 100px;
   padding: 10px  20px;
 
@@ -173,6 +170,7 @@ body {
 }
 
 .header-btn-basket {
+  display: inline-block;
   width: 100px;
   padding: 10px  20px;
 
@@ -185,6 +183,7 @@ body {
 }
 
 .header-btn-basket-full {
+  display: inline-block;
   padding: 10px;
 
   color: #000000;
@@ -195,6 +194,8 @@ body {
 
 
 .user-navigation-login {
+  display: none;
+
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -221,6 +222,14 @@ fieldset {
   background-color: #f16542;
   border-radius: 70px;
 }
+
+
+
+.slider-button:hover,
+.deals-button:hover {
+  background-color: #f48468;
+}
+
 
 .deals-button {
   display: inline-block;
@@ -249,6 +258,7 @@ fieldset {
 }
 
 .button-enter {
+  display: inline-block;
   width: 101px;
   padding: 10px 15px;
 
@@ -264,8 +274,6 @@ fieldset {
 
 
 .offers-item {
-  padding: 26px;
-
   list-style: none;
 }
 
@@ -278,18 +286,26 @@ fieldset {
   color: #ffffff;
 }
 
+
 .offers-list span {
   font-weight: 700;
   font-size: 34px;
   line-height: 45px;
 }
-.offers-item a {
+.offers-title {
+  display: inline;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  text-decoration: none;
+
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  /* text-decoration: none; */
 }
+
+
 .offers-btn {
+  display: inline-block;
   width: 194px;
   padding: 14px 22px;
 
@@ -332,7 +348,7 @@ fieldset {
 
 .deals-item-raspberry {
   width: 560px;
-  margin-left: 27px;
+  margin-right: 26px;
 
   background-color: #a03472;
   background-image: url("../img/deals-1.jpg");
@@ -343,7 +359,6 @@ fieldset {
 
 .deals-item-chocolate {
   width: 560px;
-  margin-left: 27px;
 
   background-color: #553017;
   background-image: url("../img/deals-2.jpg");
@@ -355,11 +370,17 @@ fieldset {
 .offers-item img {
   border-radius: 50%;
 }
-
-.deals {
-  display: flex;
-  margin-top: 42px;
-  margin-bottom: 42px;
+.item-price {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
+  color: #ffffff;
+}
+.item-weight {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  color: #ffffff;
 }
 
 .popular-offers a {
@@ -367,10 +388,8 @@ fieldset {
 }
 
 .features {
-  width: 1146px;
-  margin-right: 27px;
-  margin-left: 27px;
-  padding: 25px;
+  box-sizing: border-box;
+  margin: 0 auto;
 
   color: #333333;
 
@@ -379,17 +398,40 @@ fieldset {
   border-radius: 20px;
 }
 
-.blog-news-wrapper {
-  display: flex;
-  margin-top: 42px;
-  margin-bottom: 42px;
+
+
+.news a {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  text-decoration: underline;
 }
 
+.distrib {
+  padding: 10px 18px;
+
+  color: #5a5a5a;
+
+  background-color: #f8f7f4;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+
+
+.news-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+
 .news {
+  box-sizing: border-box;
   width: 560px;
   height: 224px;
-  margin-left: 27px;
-  padding: 20px;
+  padding: 10px;
 
   color: #000000;
 
@@ -400,16 +442,11 @@ fieldset {
   border-radius: 20px;
 }
 
-.news a {
-  font-size: 24px;
-  line-height: 30px;
-  color: #000000;
-}
-
 .subscription-form {
+  box-sizing: border-box;
   width: 560px;
-  margin-left: 27px;
-  padding: 20px;
+  height: 224px;
+  padding: 10px;
 
   color: #000000;
 
@@ -417,7 +454,7 @@ fieldset {
   background-image: url("../img/subscription-background.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .address {
@@ -449,7 +486,6 @@ fieldset {
   padding-left: 5px;
 
   font-weight: 700;
-  font-size: 18px;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
@@ -497,13 +533,12 @@ fieldset {
   border-radius: 15px;
 }
 .feedback-input {
-  box-sizing: border-box;
-
   background-color: #ffffff;
   border-color: transparent;
   border-radius: 10px;
 }
 .feedback-btn {
+  display: inline-block;
   width: 144px;
   margin-top: 50px;
   padding: 10px;
@@ -513,15 +548,20 @@ fieldset {
   text-decoration: none;
 
   background-color: #e84d36;
+  border: none;
   border-radius: 70px;
 }
 
 /* стилизую каталог */
+.basket-container {
+  display: none;
+}
 
 .breadcrumbs {
   display: flex;
 
   list-style: none;
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
@@ -541,6 +581,7 @@ fieldset {
 
 .pagination {
   display: flex;
+  justify-content: flex-end;
   padding: 20px;
 
   list-style: none;
@@ -613,7 +654,6 @@ fieldset {
 
 .basket-list {
   width: 544px;
-  margin-top: 50px;
 
   border-collapse: collapse;
   color: #000000;
@@ -668,4 +708,109 @@ fieldset:nth-child(4) {
   background-color: #a6b7ad;
   border: 2px solid #ffffff;
   border-radius: 50px;
+}
+.filter-btn:hover {
+  color: #000000;
+
+  background-color: #fbfcfb;;
+}
+.filter-btn:active {
+  background-color: #eaeaea;
+}
+.button-left {
+  width: 40px;
+
+  background-color: #eaeaea;
+  border-radius: 50%;
+}
+
+/* -----------сеточные стили----------------- */
+
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  width: 1146px;
+  min-width: 149px;
+  margin: 0 auto;
+
+  outline: 1px solid red;
+}
+.site-navigation {
+  display: flex;
+  margin: 0;
+  margin-left: 24px;
+  padding: 0;
+
+  outline: 1px solid green;
+}
+.user-navigation {
+  display: flex;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+
+  outline: 1px solid greenyellow;
+}
+
+
+
+.deals {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  outline: 1px solid #ff4500;
+}
+
+.hits-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+
+  outline: 1px solid #0000ff;
+}
+
+.offers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 38px;
+  padding: 0;
+
+  outline: 1px solid #0000ff;
+}
+
+.offers-item {
+  width: 267px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-news-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin: 42px auto;
+
+  outline: 1px solid #a03472;
+}
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+
+  outline: 1px solid greenyellow;
+}
+.map {
+  width: 100%;
+  height: 100%;
+
+  outline: 1px solid #ffe4c4;
+}
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
