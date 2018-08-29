@@ -12,7 +12,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   font-family: "Roboto", sans-serif;
-  color: #ffffff;
+  color: #ffffff; 
   text-transform: none;
 
   background-color: #849d8f;
@@ -837,16 +837,21 @@ fieldset:nth-child(4) {
   font-weight: 700;
 }
 
-.made-in > a {
+.copyright a {
   color: #ffffff;
 }
 
 .catalog-list-item-price {
+  position: absolute;
+  top: 210px;
   display: block;
-  margin: -66px 0 0;
+  
 
   font-weight: bold;
   font-size: 45px;
   line-height: 45px;
   text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+}
+.price-wrapper {
+  position: relative;
 }
