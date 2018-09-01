@@ -599,21 +599,7 @@ fieldset {
   font-size: 34px;
   line-height: 45px;
 }
-/* .button-box {
-  position: absolute;
-  right: -6px;
-  bottom: -82px;
-  left: -6px;
-  z-index: 2;
 
-  display: none;
-  padding: 20px 0;
-
-  background-color: rgba(255, 255, 255, 0.3);
-} */
-
-
-/* ??????????????????????????????? */
 .offers-btn {
   display: inline-block;
   padding: 14px 17px;
