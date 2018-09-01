@@ -382,11 +382,19 @@ img {
 .user-navigation-input {
   display: none;
 }
-.header-btn-search::before {
-  content: url("../img/loupe.svg");
 
-  width: 35px;
-  height: 35px;
+.header-btn-search::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 9px;
+
+  display: block;
+  width: 21px;
+  height: 20px;
+
+  background-image: url("../img/loupe.svg");
+  background-repeat: no-repeat;
 }
 
 
