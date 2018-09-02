@@ -171,29 +171,35 @@
             </fieldset>
             <fieldset class="fat">
               <legend class="fat">Жирность</legend>
-              <input class="fat-select" type="radio" name="fat-value" value="0" id="zero">
-              <label for="zero">"0%"</label>
-              <input class="fat-select" type="radio" name="fat-value" value="10" id="ten" checked>
-              <label for="ten">до 10%</label>
-              <input class="fat-select" type="radio" name="fat-value" value="30" id="thirty">
-              <label for="thirty">до 30%</label>
-              <input class="fat-select" type="radio" name="fat-value" value="30+" id="more-thirty">
-              <label for="more-thirty">свыше 30%</label>
+              <div class="fat-wrapper">
+              <input class="fat-select visually-hidden" type="radio" name="fat-value" value="0" id="zero">
+              <label class= "filter-fat" for="zero">"0%"</label>
+              <input class="fat-select visually-hidden" type="radio" name="fat-value" value="10" id="ten" checked>
+              <label class= "filter-fat" for="ten">до 10%</label>
+              <input class="fat-select visually-hidden" type="radio" name="fat-value" value="30" id="thirty">
+              <label class= "filter-fat" for="thirty">до 30%</label>
+              <input class="fat-select visually-hidden" type="radio" name="fat-value" value="30+" id="more-thirty">
+              <label class= "filter-fat" for="more-thirty">свыше 30%</label>
+              </div>
             </fieldset>
+            <!-- <div class="filters-container-low"> -->
             <fieldset class="topping-filter">
               <legend>Наполнители:</legend>
-              <input type="checkbox" name="topping" id="chocolate" value="choco" checked>
-              <label for="chocolate">шоколадные</label>
-              <input type="checkbox" name="topping" id="sugar" value="sugar" checked>
-              <label for="sugar">сахарные присыпки</label>
-              <input type="checkbox" name="topping" id="fruit" value="fruit">
-              <label for="fruit">фрукты</label>
-              <input type="checkbox" name="topping" id="syrups" value="syrups">
-              <label for="syrups">сиропы</label>
-              <input type="checkbox" name="topping" id="jams" value="jams">
-              <label for="jams">джемы</label>
+              <div class="topping-wrapper">
+              <input type="checkbox" class="toggle visually-hidden" name="topping" id="chocolate" value="choco" checked>
+              <label class= "filter-lbl" for="chocolate">шоколадные</label>
+              <input type="checkbox" class="toggle visually-hidden" name="topping" id="sugar" value="sugar" checked>
+              <label class= "filter-lbl" for="sugar">сахарные присыпки</label>
+              <input type="checkbox" class="toggle visually-hidden" name="topping" id="fruit" value="fruit">
+              <label class= "filter-lbl" for="fruit">фрукты</label>
+              <input type="checkbox" class="toggle visually-hidden" name="topping" id="syrups" value="syrups">
+              <label class= "filter-lbl" for="syrups">сиропы</label>
+              <input type="checkbox" class="toggle visually-hidden" name="topping" id="jams" value="jams">
+              <label class= "filter-lbl" for="jams">джемы</label>
+              </div>
             </fieldset>
             <button class="filter-btn">Применить</button>
+            <!-- </div> -->
           </form>
         </section>
         <section class="offers">
@@ -448,21 +454,25 @@
           </ul>
         </div>
         <div class="useful-documents">
-          <ul class="footer-information-list">
-            <li class="doc-item">
-              <a class="footer-link-information for-suppliers" href="#">Для поставщиков</a>
-            </li>
-            <li class="doc-item">
-              <a class="footer-link-information" href="#">О производстве</a>
-            </li>
-            <li class="doc-item">
-              <a class="footer-link-information" href="#">Наши документы</a>
-            </li>
-            <li class="doc-item">
-              <a class="footer-link-information" href="#">Экологические стандарты</a>
-            </li>
-          </ul>
-        </div>
+            <ul class="footer-information-list">
+              <div class="left-column">
+              <li class="doc-item">
+                <a class="footer-link-information for-suppliers" href="#">Для поставщиков</a>
+              </li>
+              <li class="doc-item">
+                <a class="footer-link-information" href="#">О производстве</a>
+              </li>
+              </div>
+              <div class="right-column">
+              <li class="doc-item">
+                <a class="footer-link-information" href="#">Наши документы</a>
+              </li>
+              <li class="doc-item">
+                <a class="footer-link-information" href="#">Экологические стандарты</a>
+              </li>
+              </div>
+            </ul>
+          </div>
         <div class="footer-copyright">
           <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
