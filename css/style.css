@@ -80,6 +80,11 @@ img {
 }
 
 .slide-title {
+  position: relative;
+  bottom: 45px;
+  left: 15px;
+
+  display: block;
   width: 700px;
   margin: 0 auto;
   margin-bottom: 27px;
@@ -87,10 +92,15 @@ img {
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
+
+  border-bottom: 39px;
 }
 
 
 .slider-button {
+  position: relative;
+  bottom: 50px;
+
   display: inline-block;
   padding: 12px 44px;
 
@@ -141,8 +151,8 @@ img {
 }
 .slider-controls {
   position: absolute;
-  bottom: 63px;
-  left: 0;
+  bottom: 65px;
+  left: 27px;
   z-index: 20;
 
   font-size: 0;
