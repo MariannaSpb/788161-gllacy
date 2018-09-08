@@ -1336,7 +1336,7 @@ img {
   left: 50%;
   z-index: 400;
 
-  display: flex;
+  display: none;
   min-width: 100%;
   margin-left: -230px;
   margin-left: -336px;
@@ -1360,7 +1360,7 @@ img {
   background-color: #f8f7f4;
   border-radius: 5px;
 }
-.foorm-title {
+.form-title {
   margin: 0;
 
   font-weight: 500;
@@ -1435,6 +1435,10 @@ img {
 
 
 .modal-feedback-close {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+
   width: 22px;
   height: 22px;
 
@@ -1448,9 +1452,8 @@ img {
 .modal-feedback-close::after {
   content: "";
   position: absolute;
-  top: 20px;
-  /*   left: px; */
-  right: 20px;
+  top: 9px;
+  right: 1px;
 
   width: 19px;
   height: 3px;
@@ -1466,9 +1469,10 @@ img {
   transform: rotate(-45deg);
 }
 
-.modal-login {
+/* .modal-login {
   display: block;
-}
+} */
+
 .modal-close {
   display: none;
 }
