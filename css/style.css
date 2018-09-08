@@ -1234,7 +1234,6 @@ img {
 
   width: 100px;
   height: 40px;
-  /* background-color: #9e4334; */
 }
 
 .basket {
@@ -1317,36 +1316,29 @@ img {
   position: relative;
 }
 /* ----------------Модальное окно----------------- */
-/* .modal-feedback {
-  display: none;
-  width: 498px;
-  color: #000000;
-  background-color: #f8f7f4;
-  border-radius: 15px;
-}
-
-.feedback-input {
-  background-color: #ffffff;
-  border-color: transparent;
-  border-radius: 10px;
-} */
-.modal-login-container {
+.feedback-overlay {
   position: fixed;
-  top: 120px;
-  left: 50%;
+  top: 0;
+  left: 0;
   z-index: 400;
 
   display: none;
-  min-width: 100%;
-  margin-left: -230px;
-  margin-left: -336px;
-  padding: 50px 80px;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.3);
+}
+.modal-feedback-container {
+  top: 120px;
+  left: 50%;
+
+  display: block;
 }
 
 .modal-feedback {
-  position: relative;
-  top: 49%;
-  left: 20%;
+  position: absolute;
+  top: 5%;
+  left: 50%;
 
   display: flex;
   flex-direction: column;
@@ -1469,45 +1461,54 @@ img {
   transform: rotate(-45deg);
 }
 
-/* .modal-login {
-  display: block;
-} */
 
-.modal-close {
-  display: none;
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 .modal-show {
   display: block;
+
+  animation: bounce 0.6s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.modal-error {
+  animation: shake 0.6s;
+}
 
 
 /* стилизую каталог */

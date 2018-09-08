@@ -349,24 +349,24 @@
         </ul>
       </div>
       <div class="useful-documents">
-        <ul class="footer-information-list">
-          <div class="left-column">
-            <li class="doc-item">
-              <a class="footer-link-information for-suppliers" href="#">Для поставщиков</a>
-            </li>
-            <li class="doc-item">
-              <a class="footer-link-information" href="#">О производстве</a>
-            </li>
-          </div>
-          <div class="right-column">
-            <li class="doc-item">
-              <a class="footer-link-information" href="#">Наши документы</a>
-            </li>
-            <li class="doc-item">
-              <a class="footer-link-information" href="#">Экологические стандарты</a>
-            </li>
-          </div>
-        </ul>
+          <div class="footer-information-list">
+              <div class="left-column">
+                <div class="doc-item">
+                  <a class="footer-link-information for-suppliers" href="#">Для поставщиков</a>
+                </div>
+                <div class="doc-item">
+                  <a class="footer-link-information" href="#">О производстве</a>
+                </div>
+              </div>
+              <div class="right-column">
+                <div class="doc-item">
+                  <a class="footer-link-information" href="#">Наши документы</a>
+                </div>
+                <div class="doc-item">
+                  <a class="footer-link-information" href="#">Экологические стандарты</a>
+                </div>
+              </div>
+            </div>
       </div>
       <div class="footer-copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
@@ -376,21 +376,22 @@
           <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
       </div>
     </footer>
-    <section class="modal-login-container">
+    <div class="feedback-overlay">
+    <section class="modal-feedback-container">
       <form class="modal-feedback" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="form-title">Мы обязательно вам ответим!</h2>
         <button class="modal-feedback-close" type="button">Закрыть</button><br>
         <label class="visually-hidden" for="feedback-name">Имя</label>
-        <input class="feedback-input" type="text" id="feedback-name" placeholder="Как вас зовут?" tabindex="0" required>
+        <input class="feedback-input" type="text" id="feedback-name" name="feedback-name" placeholder="Как вас зовут?" tabindex="0" required>
         <label class="visually-hidden" for="feedback-email">Электронная почта</label>
-        <input class="feedback-input" type="email" id="feedback-email" placeholder="Ваша почта для ответа?" tabindex="0"
-          required>
+        <input class="feedback-input" type="email" id="feedback-email" name="feedback-email" placeholder="Ваша почта для ответа?" tabindex="0" required>
         <label class="visually-hidden" for="feedback-text">Напишите что-нибудь</label>
         <textarea class="feedback-input-textarea" id="feedback-text" rows="6" placeholder="Напишите что-нибудь..."
           tabindex="0" required></textarea>
         <button class="button-submit">Отправить</button>
       </form>
     </section>
+  </div>
   </div>
   <script src="js/scripts.js"></script>
 </body>
