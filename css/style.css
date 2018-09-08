@@ -25,7 +25,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
 }
 
@@ -247,6 +247,7 @@ img {
 
 .site-navigation {
   display: flex;
+  width: 423px;
   margin-top: 22px;
   margin-right: 52px;
   padding: 0;
@@ -275,14 +276,19 @@ img {
 
 .site-navigation-current > a {
   display: inline-block;
-  padding: 9px 14px;
+  margin: 0 3px 0 1px;
+  padding: 7px 12px 6px 14px;
+
+  vertical-align: top;
 
   background-color: #d07058;
-  border-radius: 15px;
+  border-radius: 24px;
 }
 .site-navigation-sub > a {
   display: inline-block;
-  padding: 9px 14px;
+  padding: 7px 12px 6px 14px;
+
+  vertical-align: top;
 
   border: none;
   border-radius: 15px;
@@ -290,6 +296,8 @@ img {
 .site-navigation-submenu > a {
   display: inline-block;
   margin-bottom: 5px;
+
+  vertical-align: top;
 }
 
 .site-navigation-submenu {
@@ -387,8 +395,14 @@ img {
   display: block;
 }
 
+
+.options-wrapper {
+  display: block;
+  margin-left: -12px;
+}
+
 .main-navigation {
-  margin-right: 299px;
+  margin-right: 263px;
 
   font-weight: 700;
   font-size: 16px;
@@ -415,10 +429,12 @@ img {
 }
 
 .user-navigation-item:not(:last-of-type) {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
-
+.user-navigation-item:last-of-type {
+  margin-right: 15px;
+}
 
 
 .user-navigation {
@@ -440,7 +456,8 @@ img {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
-  padding: 5px 16px;
+  width: 118px;
+  padding: 5px 0;
 
   vertical-align: top;
   color: #000000;
@@ -666,7 +683,7 @@ img {
 .deals h3 {
   margin: 0 auto;
   margin-bottom: 10px;
-  margin-left: 1px;
+  margin-left: 0;
 
   font-weight: 700;
   font-size: 35px;
@@ -677,7 +694,7 @@ img {
   margin-top: 4px;
   margin-bottom: 34px;
 
-  font-weight: 700;
+  font-size: 18px;
   line-height: 22px;
   text-align: left;
 }
@@ -760,9 +777,15 @@ img {
 }
 
 .item-weight {
+  position: relative;
+
+  display: inline-block;
+  margin-left: 27px;
+
   font-weight: 700;
   font-size: 30px;
   line-height: 45px;
+  vertical-align: baseline;
   color: #ffffff;
 }
 
@@ -784,7 +807,9 @@ img {
   color: #ffffff;
 }
 .offers-cat {
-  margin-bottom: 76px;
+  margin-bottom: 47px;
+
+  border-bottom: 1px solid #9db1a5;
 }
 .features {
   box-sizing: border-box;
@@ -842,28 +867,28 @@ img {
 
   display: block;
   margin-top: -12px;
-  margin-right: 11px;
+  margin-right: 4px;
 }
 .features-partners::before {
   content: url("../img/cow.svg");
 
   display: block;
   margin-top: -13px;
-  margin-right: 11px;
+  margin-right: 13px;
 }
 .features-eco::before {
   content: url("../img/eco.svg");
 
   display: block;
   margin-top: -12px;
-  margin-right: 11px;
+  margin-right: 4px;
 }
 .features-thermo::before {
   content: url("../img/thermometer.svg");
 
   display: block;
   margin-top: -12px;
-  margin-right: 11px;
+  margin-right: 13px;
 }
 
 
@@ -891,8 +916,10 @@ img {
   right: 20px;
   bottom: 13px;
 
+  box-sizing: border-box;
+  width: 519px;
   margin: 0;
-  padding: 29px 22px 25px 20px;
+  padding: 33px 1px 25px 21px;
 
   font-weight: 500;
   font-size: 16px;
@@ -920,7 +947,7 @@ img {
 
   box-sizing: border-box;
   width: 560px;
-  padding: 20px;
+  padding: 24px 21px 9px 21px;
 
   color: #000000;
 
@@ -1132,15 +1159,14 @@ img {
 
 .user-navigation-login {
   position: absolute;
-  top: 37px;
-  right: 0;
+  top: 38px;
+  right: 16px;
   z-index: 50;
 
   display: none;
-  width: 279px;
+  width: 262px;
   padding-top: 20px;
-  padding-right: 16px;
-  padding-bottom: 20px;
+  padding-bottom: 0;
   padding-left: 20px;
 
   background-color: #f8f7f4;
@@ -1152,11 +1178,11 @@ img {
 
 .user-navigation-input {
   box-sizing: border-box;
-  width: 240px;
-  height: 44px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  margin-left: 10px;
+  width: 238px;
+  height: 48px;
+  margin-right: 9px;
+  margin-bottom: 15px;
+  margin-left: 1px;
   padding-left: 14px;
 
   font-weight: 400;
@@ -1167,12 +1193,15 @@ img {
   border: 1px solid #d3d3d2;
   border-radius: 5px;
 }
+
 .user-navigation-links {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: flex-start;
+  margin: 0;
+  padding-right: 24px;
 }
 .user-navigation-links a {
   font-weight: 400;
@@ -1191,6 +1220,7 @@ img {
 .button-enter {
   display: inline-block;
   width: 101px;
+  margin-bottom: 20px;
   padding: 10px 15px;
 
   font-size: 18px;
@@ -1328,6 +1358,9 @@ img {
 
   background: rgba(0,0,0,0.3);
 }
+
+
+
 .modal-feedback-container {
   top: 120px;
   left: 50%;
@@ -1542,8 +1575,6 @@ img {
 }
 
 
-
-
 .navigation-link:hover,
 .navigation-link:active {
   color: #ffbc9e;
@@ -1552,12 +1583,9 @@ img {
 .pagination {
   display: flex;
   justify-content: flex-end;
-  margin: 0;
-  padding: 20px;
+  width: auto;
 
   list-style: none;
-
-  border-bottom: 1px solid #9db1a5;
 }
 
 .pagination a {
@@ -1576,7 +1604,6 @@ img {
 }
 
 .pagination-item a {
-  margin: 0 2px;
   padding: 5px 10px 5px;
 }
 
@@ -1596,7 +1623,15 @@ img {
   background-color: #ffffff;
   border-radius: 50%;
 }
+
+.pagination-wrapper {
+  margin-top: 53px;
+  margin-right: 19px;
+}
+
+
 /* корзина */
+
 
 .basket-container {
   position: absolute;
@@ -1605,7 +1640,7 @@ img {
   z-index: 100;
 
   display: none;
-  width: 540px;
+  width: 514px;
   padding: 20px 14px 22px;
 
   background-color: #f8f7f4;
@@ -1624,17 +1659,18 @@ img {
   border-radius: 50%;
 }
 .basket-delete {
+  display: block;
   width: 21px;
   padding: 7px 15px 0 1px;
 
   border-spacing: 0;
 }
 
-.basket-table td {
+/* .basket-table td {
   padding: 8px 10px 16px 0;
 
   vertical-align: top;
-}
+} */
 
 .basket-delete button {
   padding: 0;
@@ -1665,10 +1701,7 @@ img {
   font-size: 13px;
   line-height: 16px;
 }
-.basket-price {
-  width: 120px;
-  padding-left: 5px;
-}
+
 .basket-price span {
   color: #999999;
 }
@@ -1731,7 +1764,7 @@ img {
   display: block;;
 }
 .filters {
-  margin-bottom: 34px;
+  margin-bottom: 36px;
   margin-left: 27px;
 }
 
@@ -1881,7 +1914,7 @@ fieldset:nth-child(4) {
 }
 .top-column {
   display: flex;
-  margin-bottom: 17px;
+  margin-bottom: 14px;
 }
 
 .low-column {
@@ -1954,7 +1987,7 @@ fieldset:nth-child(4) {
 .topping {
   margin: 0;
   margin-bottom: 5px;
-  margin-left: 19px;
+  margin-left: 12px;
 
   font-weight: 500;
   font-size: 14px;
@@ -2106,11 +2139,33 @@ fieldset:nth-child(4) {
 }
 
 
+.item-weight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -33px;
+
+  display: block;
+  width: 31px;
+  height: 36px;
+
+  background-image: url(../img/ruble.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 31px 36px;
+}
+
+
+
 .topping-wrapper label {
   position: relative;
+  bottom: 3px;
 
   display: inline-block;
-  padding-left: 25px;
+  padding-right: 17px;
+  padding-left: 29px;
+
+  vertical-align: top;
 }
 
 
@@ -2172,7 +2227,7 @@ fieldset:nth-child(4) {
   position: absolute;
   top: 4px;
   right: 0;
-  left: 0;
+  left: -2px;
 
   width: 24px;
   height: 24px;
@@ -2248,7 +2303,7 @@ fieldset:nth-child(4) {
 .modal-search {
   position: absolute;
   top: 15px;
-  right: 0;
+  right: 4px;
   z-index: 6;
 
   display: none;
