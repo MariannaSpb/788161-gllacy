@@ -1185,7 +1185,7 @@ img {
   font-size: 14px;
   line-height: 16px;
 }
-/* ---------------модальое окно-------------- */
+
 
 .user-navigation-login {
   position: absolute;
@@ -1380,7 +1380,7 @@ img {
 .right-column {
   margin-left: 31px;
 }
-/* ----------------Модальное окно----------------- */
+
 .feedback-overlay {
   position: fixed;
   top: 0;
@@ -1436,33 +1436,37 @@ img {
   height: 42px;
   margin-bottom: 17px;
   padding: 0 10px 0;
+  padding: 0 10px;
 
-  border: none;
+  background-color: #ffffff;
+  border-width: 0;
   border-radius: 5px;
-  outline: 1px solid #d3d3d2;
+  outline: 0;
+  box-shadow: inset 0 0 0 1px #d3d3d2;
 }
 .feedback-input:focus {
   border-width: 0;
   border-radius: 5px;
-  box-shadow: inset 0 0 0 2px rgba(46,136,228,0.52);
+  box-shadow: inset 0 0 0 2px #8fbdec;
 }
 .feedback-input:hover {
   border-width: 0;
   border-radius: 5px;
-  box-shadow: inset 0 0 0 2px rgba(154,154,154,0.52);
+  box-shadow: inset 0 0 0 2px #d3d3d2;
 }
 .feedback-input-textarea {
   box-sizing: border-box;
   width: 427px;
-  height: 140px;
+  height: 154px;
   margin-bottom: 20px;
-  padding: 5px 10px;
+  padding: 16px 11px;
 
   vertical-align: text-top;
 
-  border: none;
+  border-width: 0;
   border-radius: 5px;
-  outline: 1px solid #d3d3d2;
+  outline: 0;
+  box-shadow: inset 0 0 0 1px #d3d3d2;
 
   resize: none;
 }
@@ -1470,7 +1474,13 @@ img {
 .feedback-input-textarea:hover {
   border-width: 0;
   border-radius: 5px;
-  box-shadow: inset 0 0 0 2px rgba(154,154,154,0.52);
+  box-shadow: inset 0 0 0 2px #d3d3d2;
+}
+
+.feedback-input-textarea:focus {
+  border-width: 0;
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 2px #8fbdec;
 }
 
 .button-submit {
@@ -1580,10 +1590,6 @@ img {
   animation: shake 0.6s;
 }
 
-
-/* стилизую каталог */
-
-/* ----------------------------------------------------------------- */
 .breadcrumbs {
   display: flex;
   margin: 0;
@@ -1703,11 +1709,6 @@ img {
   border-spacing: 0;
 }
 
-/* .basket-table td {
-  padding: 8px 10px 16px 0;
-
-  vertical-align: top;
-} */
 
 .basket-delete button {
   padding: 0;
@@ -1724,7 +1725,6 @@ img {
   padding-top: 5px;
   padding-left: 5px;
 }
-
 
 
 
@@ -2014,7 +2014,6 @@ fieldset:nth-child(4) {
 .offers-list:nth-child(4n) {
   margin-right: 0;
 }
-/* --------------фильтр-------------- */
 
 
 .sort-filter,
@@ -2317,8 +2316,6 @@ fieldset:nth-child(4) {
   background-image: url("../img/icon-down-dir.svg");
 }
 
-
-/* --------------- modal--------------- */
 .user-navigation-input-search {
   width: 310px;
   height: 44px;
@@ -2371,7 +2368,7 @@ fieldset:nth-child(4) {
 
   display: block;
 }
-/* __________________________________ */
+
 
 
 
