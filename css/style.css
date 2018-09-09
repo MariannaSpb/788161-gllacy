@@ -590,7 +590,8 @@ img {
   right: -6px;
   bottom: -6px;
   z-index: 1;
-  /* display: none; */
+
+  display: none;
 
   border-radius: 3px;
   opacity: 0.3;
@@ -603,7 +604,8 @@ img {
   bottom: -75px;
   left: -6px;
   z-index: 10;
-  /* display: none; */
+
+  display: none;
 
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
