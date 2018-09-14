@@ -2800,15 +2800,14 @@ fieldset:nth-child(4) {
   display: -ms-flexbox;
 
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  
+      justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 412px;
   height: 39px;
-
+  align-items: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 36px;
@@ -2818,12 +2817,23 @@ fieldset:nth-child(4) {
   border-radius: 20px;
 }
 
+.first-lable {
+  margin-left: 33px;
+}
+
 
 .filter-fat {
+  display: inline-block;
+  /* margin-top: 5px; */
+  margin-right: 48px;
   position: relative;
-
-  padding-left: 37px;
+  /* padding-left: 37px; */
 }
+
+.last-lable {
+  margin-right: 0;
+}
+
 .topping-filter {
   width: 703px;
   padding: 0;
@@ -2832,16 +2842,16 @@ fieldset:nth-child(4) {
 .fat-select + .filter-fat::before {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 2px;
   right: 0;
-  left: 1px;
+  left: -25px;
 
   width: 24px;
   height: 24px;
 
   background-image: url(../img/radio-off.svg);
   background-repeat: no-repeat;
-  background-size: 24px 24px;
+  background-size: 25px 23px;
   cursor: pointer;
   opacity: 0.8;
 }
