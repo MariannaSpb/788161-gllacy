@@ -985,7 +985,7 @@ img {
 .features {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 1146px;
+  /* width: 1146px; */
   /* min-height: 280px; */
   margin-right: 27px;
   margin-bottom: 38px;
@@ -1791,10 +1791,10 @@ img {
 
 .button-submit {
   display: block;
+  align-self: flex-end;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-top: 10px;
-  margin-left: auto;
   padding: 9px 21px 9px 21px;
 
   font-weight: 700;
@@ -1813,6 +1813,8 @@ img {
   -webkit-box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
           box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
   cursor: pointer;
+
+  -ms-flex-item-align: end;
 }
 
 
@@ -2308,11 +2310,9 @@ fieldset:nth-child(4) {
 }
 
 .filter-btn {
-  width: 145px;
+  align-self: flex-end;
   height: 36px;
-  margin-top: 24px;
-  margin-left: 8px;
-  padding: 2px 27px;
+  padding: 7px 29px;
 
   font-weight: 500;
   font-size: 16px;
@@ -2322,6 +2322,8 @@ fieldset:nth-child(4) {
   background-color: #a6b7ad;
   border: 2px solid #ffffff;
   border-radius: 60px;
+
+  -ms-flex-item-align: end;
 }
 
 
@@ -2460,7 +2462,7 @@ fieldset:nth-child(4) {
   -ms-flex-direction: column;
       flex-direction: column;
       flex-wrap: wrap;
-  width: 860px;
+  /* width: 860px; */
 
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
@@ -2470,7 +2472,6 @@ fieldset:nth-child(4) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 14px;
 }
 
 .low-column {
@@ -2566,8 +2567,6 @@ fieldset:nth-child(4) {
 
 
 .price {
-  width: 220px;
-  height: 52px;
   margin: 0;
   margin-right: 15px;
   padding: 0;
@@ -2705,10 +2704,11 @@ fieldset:nth-child(4) {
   align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 703px;
-  height: 37px;
+  /* width: 703px; */
+  height: 34px;
   margin: 0;
-  padding: 5px;
+  padding: 8px;
+  padding-right: 14px;
 
   list-style: none;
   color: #ffffff;
@@ -2845,7 +2845,7 @@ fieldset:nth-child(4) {
   cursor: pointer;
 }
 
-/* .filter-fat:last-child label {
+/* .filter-fat:last-child .filter-fat {
   margin-right: 0;
   padding-left: 43px;
 
@@ -2857,8 +2857,22 @@ fieldset:nth-child(4) {
   cursor: pointer;
 } */
 
+.last-lbl {
+  margin-right: 0;
+  padding-left: 43px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+  cursor: pointer;
+}
+
 .topping-filter {
-  width: 703px;
+  margin-top: 17px;
+  margin-right: 10px;
+  margin-left: 0;
   padding: 0;
 }
 
