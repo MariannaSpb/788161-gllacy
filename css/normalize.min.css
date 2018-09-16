@@ -5,7 +5,7 @@ html {
 }body {
   margin: 0;
 }h1 {
-  margin: 0.67em 0;;
+  margin: 0.67em 0;
 
   font-size: 2em;
 }hr {
@@ -13,13 +13,13 @@ html {
   height: 0;
   overflow: visible;
 }pre {
-  font-size: 1em;;
+  font-size: 1em;
   font-family: monospace,monospace;
 }a {
   background-color: transparent;
 }abbr[title] {
   text-decoration: underline;
-  text-decoration: underline dotted;;
+  text-decoration: underline dotted;
 
   border-bottom: none;
 }b,
@@ -28,7 +28,7 @@ strong {
 }code,
 kbd,
 samp {
-  font-size: 1em;;
+  font-size: 1em;
   font-family: monospace,monospace;
 }small {
   font-size: 80%;
@@ -50,7 +50,7 @@ input,
 optgroup,
 select,
 textarea {
-  margin: 0;;
+  margin: 0;
 
   font-size: 100%;
   line-height: 1.15;
@@ -70,7 +70,7 @@ select {
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
-  padding: 0;;
+  padding: 0;
 
   border-style: none;
 }button:-moz-focusring,
@@ -100,13 +100,13 @@ select {
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }[type="search"] {
-  outline-offset: -2px;;
+  outline-offset: -2px;
 
   -webkit-appearance: textfield;
 }[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }::-webkit-file-upload-button {
-  font: inherit;;
+  font: inherit;
 
   -webkit-appearance: button;
 }details {
